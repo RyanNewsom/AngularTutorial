@@ -1,0 +1,19 @@
+<button
+  class="btn btn-primary"
+  (click)="onShowDetails()"
+> Display Details
+</button>
+
+  <p *ngIf="shouldDisplay">The secret password is: Tuna</p>
+<ul class="events">
+
+  <div
+    *ngFor="let event of buttonEvents"
+    [ngStyle] = "{ backgroundColor: event >= 5 ? 'blue' : 'transparent' }"
+    [ngClass] = "{ 'white-text': event >= 5 }"
+  >
+    <p>{{ event }}</p>
+  </div>
+
+</ul>
+

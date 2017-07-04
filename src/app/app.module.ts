@@ -8,6 +8,7 @@ import { ServersComponent } from './servers/servers.component';
 import { TitleComponent } from './title/title.component';
 import { FooterComponent } from './footer/footer.component';
 import { Assignment2Component } from './assignment-2/assignment-2.component';
+import { Assignment3Component } from './assignment-3/assignment-3.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { Assignment2Component } from './assignment-2/assignment-2.component';
     TitleComponent,
     FooterComponent,
     Assignment2Component,
+    Assignment3Component,
   ],
   imports: [
     BrowserModule,
