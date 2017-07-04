@@ -3,11 +3,18 @@
 <div class="container">
   <div class="col-sm-12">
     <label>Server Name</label>
-    <input type="text"
-      class="form-control"
-      (input)="onUpdateServerName($event)">
+    <!--One Way Binding-->
+    <!--<input type="text"-->
+      <!--class="form-control"-->
+      <!--(input)="onUpdateServerName($event)">-->
 
-    <p>{{ serverName }}</p>
+    <!--Two-Way binding-->
+    <input type="text"
+           class="form-control"
+           [(ngModel)]="serverName">
+
+    <!--<p>{{ serverName }}</p>-->
+
     <button
       class="btn btn-primary center-block"
       [disabled]="!allowNewServer"
@@ -16,3 +23,6 @@
     {{ serverCreationStatus }}
   </div>
 </div>
+
+<p>Assignment 2</p>
+<app-assignment-2></app-assignment-2>
